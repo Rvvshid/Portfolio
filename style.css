@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: aquamarine;
+.nav-buttons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    width: 5.6rem;
+    height: 2.5rem;
+    font-family: Verdana,Tahoma,sans-serif;
+}
+.nav-buttons button:hover{
+    background-color: darkgray;
 }
