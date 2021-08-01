@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body{
+    background-color: hsla(177, 23%, 6%, 1);
+}
+
 .logo{/*This logo is only temporary*/
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 2.5vw;
@@ -11,25 +15,49 @@
     color: grey;/*Temporary*/
 }
 
+.hamburger, .nav-buttons{
+    flex-direction: column;
+}
+.nav-buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
 .nav-buttons button{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color: hsla(177, 23%, 6%,1);
+    font-size: 12px;
     color: white;
     font-family: Verdana,Tahoma,sans-serif;
-    width: 8vw;
-    height: 6vh;
-    border: none;
-    border-radius: 5vw;
+    width: 100px;
+    height: 45px;
+    border: 2px solid hsla(282, 58%, 36%, 1);
+    border-radius:30px;
+    margin: 0.5vw;
 }
 .nav-buttons button:hover{
-    background-color: darkgray;
+  background-color: hsla(177, 23%, 10%, 1);
 }
+.nav-buttons button:active{
+    border-color:hsla(191, 96%, 41%, 1);
+  }
 
 nav{
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    flex-direction: column;
+}
+.nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#nav-bt{
+    visibility:hidden;/*After positioning is done remove the comments and make it hidden, so the hamburger button works*/
+    /* visibility:visible; */
 }
 
 a{
@@ -39,16 +67,67 @@ a{
 
 header{
     height: 100vh;
+   
 }
 
-.about,.MyProject,.contacts{
+header .title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about,.MyProjects,.contacts{
     height: 100vh;
+}
+.about,.MyProjects,.contacts p{
+    color:white;
+    font-family: Verdana,Tahoma, sans-serif;
+    margin:10vw;
+    line-height: 1.7;
 }
 
 .line{
   width:20px;
   height:3px;
-  background-color: grey;
-  margin:3px;
+  background-color: hsla(282, 58%, 36%, 1);
+  margin:2px;
   border-radius: 10px;
+}
+
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 300px;
+    width: 40px;
+    height: 40px;
+    background-color: hsla(177, 23%, 6%,1);
+    /* border: 1px solid white; */
+}
+
+.hamburger:hover{
+    background-color: hsla(177, 23%, 10%,1);
+}
+
+
+.title{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-name{
+    font-size: 4vw;
+    color: hsla(191, 96%, 41%, 1);
+
+}
+
+.heading{
+ color:hsla(191, 96%, 41%, 1);
+ font-family: Verdana,Tahoma, sans-serif;
+ text-align:center;/*temporary*/
 }
