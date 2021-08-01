@@ -1,5 +1,14 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.logo{/*This logo is only temporary*/
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: grey;/*Temporary*/
 }
 
 .nav-buttons button{
@@ -7,10 +16,39 @@
     justify-content: center;
     align-items: center;
     background-color: grey;
-    width: 5.6rem;
-    height: 2.5rem;
+    color: white;
     font-family: Verdana,Tahoma,sans-serif;
+    width: 8vw;
+    height: 6vh;
+    border: none;
+    border-radius: 5vw;
 }
 .nav-buttons button:hover{
     background-color: darkgray;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    height: 100vh;
+}
+
+.about,.MyProject,.contacts{
+    height: 100vh;
+}
+
+.line{
+  width:20px;
+  height:3px;
+  background-color: grey;
+  margin:3px;
+  border-radius: 10px;
 }
